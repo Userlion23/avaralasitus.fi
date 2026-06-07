@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terassi- ja parvekelasitusratkaisut sekä ikkuna- ja oviremontit avaimet käteen- periaatteella. Avara Lasitus Oy toteuttaa laadukkaat terassi- ja parvekelasitukset sekä energiatehokkaat ikkuna- ja oviremontit.">
+    <link rel="stylesheet" href="palvelut.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Palvelut | Avara Lasitus Oy</title>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+
+  <body>
+<nav class="navbar">
+
+  <!-- LEFT LOGO -->
+  <div class="logo">
+    <img src="kuvat/AvaralasitusLogo-removebg-preview-white.png" alt="Logo">
+  </div>
+
+  <!-- HAMBURGER MENU BUTTON -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- CENTER NAVIGATION -->
+  <div class="nav-center" id="navCenter">
+
+    <ul class="nav-links">
+      <li><a href="index.html">ETUSIVU</a></li>
+      <li><a href="lasitukset.html">PARVEKE- TERASSI- JA KAIDELASITUKSET</a></li>
+      <li><a href="ikkuna.html">IKKUNAT JA OVET</a></li>
+      <li><a href="rahoitus.html">RAHOITUS</a></li>
+      <li><a href="referenssit.html">REFERENSSIT</a></li>
+      <li><a href="palvelut.html">PALVELUT</a></li>
+      <li><a href="yritys.html">YRITYS</a></li>
+      <li><a href="yhteystiedot.html">YHTEYSTIEDOT</a></li>
+
+    </ul>
+
+
+  </div>
+
+</nav> 
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navCenter = document.getElementById('navCenter');
+  
+  hamburger.addEventListener('click', () => {
+    navCenter.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+  
+  // Close menu when a link is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navCenter.classList.remove('active');
+      hamburger.classList.remove('active');
+    });
+  });
+</script> 
+                <section class="text">
+                  <h1>Palvelut</h1>
+                  <p>Meiltä saat kokonaispalvelun suunnittelusta valmiiseen asennukseen. <br>Huolehdimme kaikesta, jotta sinä voit nauttia valmiista lopputuloksesta.</p>
+                </section>
+
+
+    <section class="palvelut">
+        <section class="palvelut-lista">
+            <div class="palvelu">
+
+                <img src="kuvat/Kartoitus.png" alt="Kartoitus" class="palvelu-icon">
+                <h2>Maksuton kartoitus</h2>
+                <p>Käymme kohteessa, kartoitamme tarpeet <br>ja annamme suositukset.</p>
+            </div>
+            <div class="palvelu">
+                <img src="kuvat/Suunnittelu.png" alt="Suunnittelu" class="palvelu-icon">
+                <h2>Suunnittelu</h2>
+                <p>Suunnittelemme ratkaisun toiveidesi ja <br>kohteen mukaan.</p>
+            </div>
+            <div class="palvelu">
+                <img src="kuvat/Tuotteet.png" alt="Tuotteet" class="palvelu-icon">
+                <h2>Tuotteet</h2>
+                <p>Toimitamme korkealaatuiset, kotimaiset <br>tuotteet suoraan kohteeseen.</p>
+            </div>
+            <div class="palvelu">
+                <img src="kuvat/Asennus.png" alt="Asennus" class="palvelu-icon">
+                <h2>Asennus</h2>
+                <p>Ammattitaitoinen asennustiimimme takaa <br>siistin ja kestävän lopputuloksen.</p>
+            </div>
+            <div class="palvelu">
+                <img src="kuvat/Huolto.png" alt="Huolto ja tuki" class="palvelu-icon">
+                <h2>Huolto ja tuki</h2>
+                <p>Olemme tukenasi myös asennuksen <br>jälkeen.</p>
+            </div>
+           
+
+
+        </section>
+
+        <section class="left">
+
+          <section class="texs">
+            <h1>Lasitusratkaisut jotka <br>tekevät arjesta parempaa</h1>
+            <p>Olipa kyseessä terassi, parveke tai ikkunat, tarjoamme laadukkat ja kestävät <br>lasitusratkaisut, jotka lisäävät asumismukavuutta, energiatehokkuutta ja <br>kiinteistön arvoa.</p>
+
+          </section>
+
+
+                <section class="image">
+                    <img src="kuvat/5.jpg" alt="Lasitukset">
+                </section>
+          <section class="yhteys-box">
+            <img src="kuvat/sydän-removebg.png">
+            <div class="column">
+              <h3>Kysy lisää tai pyydä tarjous</h3>
+              <p>Autamme sinua löytämään juuri sinun kotiisi sopivan ratkaisun.</p>
+            </div>
+            <a class="nappi" href="yhteystiedot.html">OTA YHTEYTTÄ</a></li>
+          </section>
+
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+      <section class="middle">
+
+            <a class="btn4" href="mailto:info@avaralasitus.fi">Varaa maksuton arviokäynti</a></li>
+
+            <p>Palvelemme asiakkaitamme luotettavasti ja korkealla ammattiylpeydellä – jokaisessa projektissa.</p>
+
+            <p>Avara Lasitus Oy<br>
+            Puhelin: 04578320975<br>
+            Sähköposti: info@avaralasitus.fi<br>
+            Postiosoite: Pitkämäenkatu 9, 20250 Turku<br>
+            Y-tunnus: 3619994-7</p>
+
+
+      <img src="kuvat/AvaralasitusLogo-removebg-preview.png" width="150" height="100" class="logo">
+      
+      <a href="Rekisteri- ja tietosuojaseloste.odt">Rekisteri- ja tietosuojaseloste</a>
+
+      <p>© 2026 Avara Lasitus Oy. Kaikki oikeudet pidätetään.</p>
+      
+      </section>
+      <section class="contact-section">
+
+        <h2>Ota yhteyttä</h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="e05f8040-c1bb-4d2e-85c8-9608a9416a8e">
+              
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" placeholder="Message" required></textarea>
+              <button class="submit" type="submit">Submit</button>
+        </form>
+        
+    </footer>
+
+
+
+  </body>
+</html>

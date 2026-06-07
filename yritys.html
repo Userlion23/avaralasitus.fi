@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terassi- ja parvekelasitusratkaisut sekä ikkuna- ja oviremontit avaimet käteen- periaatteella. Avara Lasitus Oy toteuttaa laadukkaat terassi- ja parvekelasitukset sekä energiatehokkaat ikkuna- ja oviremontit.">
+    <link rel="stylesheet" href="yritys.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Yritys | Avara Lasitus Oy</title>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+
+  <body>
+<nav class="navbar" role="navigation" role="navigation">
+
+  <!-- LEFT LOGO -->
+  <div class="logo">
+    <img src="kuvat/AvaralasitusLogo-removebg-preview-white.png" alt="Logo">
+  </div>
+
+  <!-- HAMBURGER MENU BUTTON -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- CENTER NAVIGATION -->
+  <div class="nav-center" id="navCenter">
+
+    <ul class="nav-links">
+      <li><a href="index.html">ETUSIVU</a></li>
+      <li><a href="lasitukset.html">PARVEKE- TERASSI- JA KAIDELASITUKSET</a></li>
+      <li><a href="ikkuna.html">IKKUNAT JA OVET</a></li>
+      <li><a href="rahoitus.html">RAHOITUS</a></li>
+      <li><a href="referenssit.html">REFERENSSIT</a></li>
+      <li><a href="palvelut.html">PALVELUT</a></li>
+      <li><a href="yritys.html">YRITYS</a></li>
+      <li><a href="yhteystiedot.html">YHTEYSTIEDOT</a></li>
+
+    </ul>
+
+
+  </div>
+
+</nav> 
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navCenter = document.getElementById('navCenter');
+  
+  hamburger.addEventListener('click', () => {
+    navCenter.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+  
+  // Close menu when a link is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navCenter.classList.remove('active');
+      hamburger.classList.remove('active');
+    });
+  });
+</script> 
+
+
+    <section class="palvelut" role="main">
+        <section class="text">
+        <h1>Meistä</h1>
+        <p>Olemme paikallinen, luotettava ja kokenut toimittaja lasitus- ja ikkuna-alalla. <br>Tavoitteemme on tarjota asiakkallemme laadukkaita ratkaisuja ja ensiluokkaista palvelua.</p>
+        </section>
+        <section class="palvelut-lista">
+           
+
+
+        </section>
+
+
+    <section class="icons">
+        <div class="icon1">
+            <img src="kuvat/Käyttöaika.png" alt="Energy Saving Icon">
+            <h3>Kokemus</h3>
+            <p>Vuosien kokemus alalta <br>takaa varman osaamisen.</p>
+        </div>
+        <div class="icon2">
+            <img src="kuvat/Suojaa.png" alt="Energy Saving Icon">
+            <h3>Luotettavuus</h3>
+            <p>Pitäydymme sovituissa <br>aikatauluissa ja lupauksissa.</p>
+        </div>
+        <div class="icon3">
+            <img src="kuvat/Hiljaisempi.png" alt="Energy Saving Icon">
+            <h3>Laadukkaat tuotteet</h3>
+            <p>Käytämme vain testattuja ja <br>kestäviä tuotteita.</p>
+        </div>
+        <div class="icon4">
+            <img src="kuvat/Arvo.png" alt="Energy Saving Icon">
+            <h3>Paikallinen palvelu</h3>
+            <p>Palvelemme nopeasti ja <br>joustavasti.</p>
+        </div>
+    
+    </section>
+
+
+    <section class="info">
+
+    <div class="image">
+        <img src="kuvat/Handshake.jpeg" alt="Yritys" width="1860" height="700">
+    </div>
+
+    <div class="laptop">
+    <div class="info-box">
+        <h2>Avara Lasitus Oy - laatua, kokemusta ja luotettavaa palvelua</h2>
+        <p>Avara Lasitys Oy on paikallinen lasitus - ja ikkuna alan asiantuntija, joka on palvellut yksitysasiakkaita, <br> yrityksiä ja taloyhtiöitä jo ylis 20 vuoden ajan. Olemme erikoistuneet terassi-, parveke- ja kaidelasituksiin <br>sekä alumiini- ja lasirakentamiseen.</p><br><br>
+        <p>Meille tärkeintä on asiakkaan tyytyväisyys. Siksi tarjoamme kokonaisvaltaista palvelua suunnittelusta <br>asennukseen ja huoltoon - aina korkealla ammattitaidolla ja tarkkuudella.</p>
+    </div>
+    
+    <div class="text-box">
+        <div class="box1">
+            <img src="kuvat/yhteisö-removebg-preview.png" class="text-icon">
+            <p>Yli 20 vuoden kokemus <br>alumiini- ja lasirakentamisesta</p>
+        </div>
+
+        <div class="box2">
+            <img src="kuvat/Lakki-removebg-preview.png" class="text-icon">
+            <p>Osaava ja koulutettu <br>henkilöstö</p>
+        </div>
+
+        <div class="box3">
+            <img src="kuvat/Rakenne-removebg-preview.png" class="text-icon">
+            <p>Luotettava kumppani <br>alusta loppuun</p>
+        </div>
+
+        <div class="box4">
+            <img src="kuvat/sydän-removebg.png" class="text-icon">
+            <p>Tyytyväiset asiakkaat - <br>paras referenssimme</p>
+        </div>
+    </div>
+    </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer role="contentinfo">
+
+      <section class="middle">
+
+            <a class="btn4" href="mailto:info@avaralasitus.fi">Varaa maksuton arviokäynti</a></li>
+
+            <p>Palvelemme asiakkaitamme luotettavasti ja korkealla ammattiylpeydellä – jokaisessa projektissa.</p>
+
+            <p>Avara Lasitus Oy<br>
+            Puhelin: 04578320975<br>
+            Sähköposti: info@avaralasitus.fi<br>
+            Postiosoite: Pitkämäenkatu 9, 20250 Turku<br>
+            Y-tunnus: 3619994-7</p>
+
+
+      <img src="kuvat/AvaralasitusLogo-removebg-preview.png" width="150" height="100" class="logo">
+      <img class="yrittäjät" src="kuvat/SY_logo_RGB_vari.png" class="logo">
+      
+      <a href="Rekisteri- ja tietosuojaseloste.odt">Rekisteri- ja tietosuojaseloste</a>
+
+      <p>© 2026 Avara Lasitus Oy. Kaikki oikeudet pidätetään.</p>
+      
+      </section>
+      <section class="contact-section">
+
+        <h2>Ota yhteyttä</h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="e05f8040-c1bb-4d2e-85c8-9608a9416a8e">
+              
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" placeholder="Message" required></textarea>
+              <button class="submit" type="submit">Submit</button>
+        </form>
+        
+    </footer>
+
+
+
+  </body>
+</html>

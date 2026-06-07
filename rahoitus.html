@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terassi- ja parvekelasitusratkaisut sekä ikkuna- ja oviremontit avaimet käteen- periaatteella. Avara Lasitus Oy toteuttaa laadukkaat terassi- ja parvekelasitukset sekä energiatehokkaat ikkuna- ja oviremontit.">
+    <link rel="stylesheet" href="rahoitus.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Rahoitus | Avara Lasitus Oy</title>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+
+  <body>
+<nav class="navbar" role="navigation">
+
+  <!-- LEFT LOGO -->
+  <div class="logo">
+    <img src="kuvat/AvaralasitusLogo-removebg-preview.png" alt="Logo">
+  </div>
+
+  <!-- HAMBURGER MENU BUTTON -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- CENTER NAVIGATION -->
+  <div class="nav-center" id="navCenter">
+
+    <ul class="nav-links">
+      <li><a href="index.html">ETUSIVU</a></li>
+      <li><a href="lasitukset.html">PARVEKE- TERASSI- JA KAIDELASITUKSET</a></li>
+      <li><a href="ikkuna.html">IKKUNAT JA OVET</a></li>
+      <li><a href="rahoitus.html">RAHOITUS</a></li>
+      <li><a href="referenssit.html">REFERENSSIT</a></li>
+      <li><a href="palvelut.html">PALVELUT</a></li>
+      <li><a href="yritys.html">YRITYS</a></li>
+      <li><a href="yhteystiedot.html">YHTEYSTIEDOT</a></li>
+
+    </ul>
+
+
+  </div>
+
+</nav> 
+
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navCenter = document.getElementById('navCenter');
+  
+  hamburger.addEventListener('click', () => {
+    navCenter.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+  
+  // Close menu when a link is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navCenter.classList.remove('active');
+      hamburger.classList.remove('active');
+    });
+  });
+
+  
+</script> 
+
+
+
+    <section class="rahoitus" role="main">
+      <section class="text">
+        <h1>Rahoitus</h1>
+        <p>Hoida hankintasi vaivatta OP:n rahoituksella.
+          Laske itsellesi sopiva kuukausierä laskurilla ja täytä hakemus helposti.</p>
+        <ul>
+          <li> Rahoitus 2 500–50 000 €.</li>
+          <li> Joustava takaisinmaksuaika.</li>
+          <li> Korko OP-prime + 6,95 %*.</li>
+          <li> Laskutuspalkkio 7 €/kk.</li>
+          <li> Kuukausi korotonta ja kulutonta maksuaikaa.</li>
+          <li> Voit maksaa koko luoton kerralla pois ilman lisäkuluja.</li>
+          <li> Osuuspankin omistaja-asiakkaana luotosta kertyy OP-bonuksia. Lue lisää op.fi/op-bonus.</li>
+        </ul>
+        <h2>Rahoitus laskuri</h2>
+        <img src="kuvat/op-rahoitus-logo.png" alt="OP Rahoitus logo" class="op-logo">
+        <div id="op-keti-init-content"></div>
+
+      </section>
+      <section class="kuva">
+        <img src="kuvat/rahoituskuva.png">
+      </section>
+    </section>
+
+
+
+    <footer role="contentinfo">
+
+      <section class="middle">
+
+            <a class="btn4" href="mailto:info@avaralasitus.fi">Varaa maksuton arviokäynti</a></li>
+
+            <p>Palvelemme asiakkaitamme luotettavasti ja korkealla ammattiylpeydellä – jokaisessa projektissa.</p>
+
+            <p>Avara Lasitus Oy<br>
+            Puhelin: 04578320975<br>
+            Sähköposti: info@avaralasitus.fi<br>
+            Postiosoite: Pitkämäenkatu 9, 20250 Turku<br>
+            Y-tunnus: 3619994-7</p>
+
+
+      <img src="kuvat/AvaralasitusLogo-removebg-preview.png" width="150" height="100" class="logo">
+      
+      <a href="Rekisteri- ja tietosuojaseloste.odt">Rekisteri- ja tietosuojaseloste</a>
+
+      <p>© 2026 Avara Lasitus Oy. Kaikki oikeudet pidätetään.</p>
+      
+      </section>
+      <section class="contact-section">
+
+        <h2>Ota yhteyttä</h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="e05f8040-c1bb-4d2e-85c8-9608a9416a8e">
+              
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" placeholder="Message" required></textarea>
+              <button class="submit" type="submit">Submit</button>
+        </form>
+        
+    </footer>
+
+
+
+  </body>
+
+  <script src="op-calc-widget.js"></script>
+
+    <script>
+      window.__opCalcAccount = {
+        mode: "kertaluotto",
+        key: "avaralasitus"
+      };
+
+      window.__opCalcOpts = [];
+
+      window.__opCalcOpts["content"] = {
+        linkCta: "https://hae.rahoitus.op.fi/kertaluotto/avaralasitus",
+        linkMore: "",
+        heading: "Rahoituksen määrä",
+        colorPrimary: "#51c042",
+        colorSecondary: "#ffffff",
+        textOpenBtn: "Maksa erissä",
+        isSolo: false,
+        enableInputChanges: true,
+        showCta: true,
+        showInput: true,
+        type: "content",
+        initAmount: 5000,
+        showInfo: {
+          realInterest: true,
+          interestMargin: true,
+          paybackTime: true,
+          costEstimate: true
+        }
+      };
+    </script>
+  <script>
+
+
+
+
+    const images = document.querySelectorAll("#slider img");
+    let index = 0;
+
+    setInterval(() => {
+      images[index].classList.remove("active");
+      index = (index + 1) % images.length;
+      images[index].classList.add("active");
+    }, 3000); // change every 3 seconds
+
+
+
+const track = document.querySelector('.carousel-track');
+const slides = document.querySelectorAll('.slide');
+
+let inidex = 0;
+let startX = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+let isDragging = false;
+let animationID;
+
+// Buttons still work
+document.querySelector('.next').onclick = () => {
+  index = (index + 1) % slides.length;
+  updateSlide();
+};
+
+document.querySelector('.prev').onclick = () => {
+  index = (index - 1 + slides.length) % slides.length;
+  updateSlide();
+};
+
+// --- Drag / Swipe Events ---
+track.addEventListener('mousedown', startDrag);
+track.addEventListener('touchstart', startDrag);
+
+track.addEventListener('mouseup', endDrag);
+track.addEventListener('mouseleave', endDrag);
+track.addEventListener('touchend', endDrag);
+
+track.addEventListener('mousemove', drag);
+track.addEventListener('touchmove', drag);
+
+// Prevent image dragging default
+track.querySelectorAll("img").forEach(img => {
+  img.addEventListener("dragstart", e => e.preventDefault());
+});
+
+function startDrag(e) {
+  isDragging = true;
+  startX = getPositionX(e);
+  animationID = requestAnimationFrame(animation);
+}
+
+function drag(e) {
+  if (!isDragging) return;
+  const currentX = getPositionX(e);
+  const move = currentX - startX;
+  currentTranslate = prevTranslate + move;
+}
+
+function endDrag() {
+  if (!isDragging) return;
+  isDragging = false;
+  cancelAnimationFrame(animationID);
+
+  const movedBy = currentTranslate - prevTranslate;
+
+  // If dragged enough → change slide
+  if (movedBy < -200 && index < slides.length - 1) index++;
+  if (movedBy > 200 && index > 0) index--;
+
+  updateSlide();
+}
+
+function getPositionX(e) {
+  return e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
+}
+
+function animation() {
+  track.style.transform = `translateX(${currentTranslate}px)`;
+  if (isDragging) requestAnimationFrame(animation);
+}
+
+function updateSlide() {
+  const slideWidth = slides[0].clientWidth;
+  currentTranslate = -index * slideWidth;
+  prevTranslate = currentTranslate;
+  track.style.transform = `translateX(${currentTranslate}px)`;
+}
+
+
+  </script>
+</html>

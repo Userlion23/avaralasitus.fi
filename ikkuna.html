@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fi">  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terassi- ja parvekelasitusratkaisut sekä ikkuna- ja oviremontit avaimet käteen- periaatteella. Avara Lasitus Oy toteuttaa laadukkaat terassi- ja parvekelasitukset sekä energiatehokkaat ikkuna- ja oviremontit.">
+    <link rel="stylesheet" href="ikkuna.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Ikkuna- ja ovirempat | Avara Lasitus Oy</title>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+
+  <body>
+<nav class="navbar" role="navigation">
+
+  <!-- LEFT LOGO -->
+  <div class="logo">
+    <img src="kuvat/AvaralasitusLogo-removebg-preview-white.png" alt="Logo">
+  </div>
+
+  <!-- HAMBURGER MENU BUTTON -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- CENTER NAVIGATION -->
+  <div class="nav-center" id="navCenter">
+
+    <ul class="nav-links">
+      <li><a href="index.html">ETUSIVU</a></li>
+      <li><a href="lasitukset.html">PARVEKE- TERASSI- JA KAIDELASITUKSET</a></li>
+      <li><a href="ikkuna.html">IKKUNAT JA OVET</a></li>
+      <li><a href="rahoitus.html">RAHOITUS</a></li>
+      <li><a href="referenssit.html">REFERENSSIT</a></li>
+      <li><a href="palvelut.html">PALVELUT</a></li>
+      <li><a href="yritys.html">YRITYS</a></li>
+      <li><a href="yhteystiedot.html">YHTEYSTIEDOT</a></li>
+
+    </ul>
+
+
+  </div>
+
+</nav> 
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navCenter = document.getElementById('navCenter');
+  
+  hamburger.addEventListener('click', () => {
+    navCenter.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+  
+  // Close menu when a link is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navCenter.classList.remove('active');
+      hamburger.classList.remove('active');
+    });
+  });
+</script> 
+
+
+    <section class="palvelut" role="main">
+        <section class="text">
+        <img src="kuvat/Karelia.svg" alt="Karelia" class="palvelut-logo">
+        <h1>Karelia ikkunat ja ovet <br>laatua suomalaisiin koteihin</h1>
+        <p>Karelia ikkunat ja ovet yhdistävät modernin muotoilun <br>erinomaisen energiatehokkuuden ja kestävän <br>
+            suomalaisen laadun. Valitse ikkunat, jotka kestävät <br>aikaa ja parantaa asumisviihtyvyyttäsi</p>
+        </section>
+        <section class="palvelut-lista">
+           
+                <section class="image">
+                    <img src="kuvat/1.png" alt="Ikkuna">
+                </section>
+
+
+        </section>
+
+
+    <section class="text1">
+        <h2>Ikkunoiden hyödyt</h2>
+    </section>
+
+    <section class="icons">
+        <div class="icon1">
+            <img src="kuvat/Lämmöneriste.png" alt="Energy Saving Icon">
+            <h3>Erinomainen <br>lämmöneristys</h3>
+            <p>Säästä energiaa ja rahaa.</p>
+        </div>
+        <div class="icon2">
+            <img src="kuvat/Hiljaisempi.png" alt="Energy Saving Icon">
+            <h3>Hiljaisempi sisätila</h3>
+            <p>Laadukas rakenne vaimentaa <br>ulkopuolista ääntä.</p>
+        </div>
+        <div class="icon3">
+            <img src="kuvat/Rakenne.png" alt="Energy Saving Icon">
+            <h3>Kestävä Rakenne</h3>
+            <p>Pitkä käyttöikä ja vähäinen huollon tarve.</p>
+        </div>
+        <div class="icon4">
+            <img src="kuvat/Ulkonäkö.png" alt="Energy Saving Icon">
+            <h3>Tyylikäs ulkonäkö</h3>
+            <p>Sopii niin perinteiseen kuin moderniin kotiin.</p>
+        </div>
+    
+    </section>
+<!--
+    <section class="mallisto">
+        <h2>Ikkunamallistot</h2>
+        <div class="mallisto-kuvat">
+            <img src="kuvat/1.png" alt="Ikkuna1" width="500" height="400">
+            <img src="kuvat/3.jpg" alt="Ikkuna2" width="500" height="400">
+            <img src="kuvat/5.jpg" alt="Ikkuna3" width="500" height="400">
+        </div>
+        <section class="mallisto-teksti">
+            <section class="mallisto-teksti1">
+                <h4>Karelia MSE</h4>
+                <p>Perinteinen ja kestävä <br>puualuste-ikkuna</p>
+            </section>
+
+             <section class="mallisto-teksti2">
+                <h4>Karelia MEA</h4>
+                <p>Moderni ja energiatehokas <br>puualumiini-ikkuna.</p>
+            </section>
+
+             <section class="mallisto-teksti3">
+                <h4>Karelia ME</h4>
+                <p>Tyylikäs ja huoltovapaa <br>alumiini-ikkuna.</p>
+             </section>
+
+            </section>
+    </section>
+  -->
+  <script>
+    const images = document.querySelectorAll("#slider img");
+    let index = 0;
+
+    setInterval(() => {
+      images[index].classList.remove("active");
+      index = (index + 1) % images.length;
+      images[index].classList.add("active");
+    }, 3000); // change every 3 seconds
+
+
+
+const track = document.querySelector('.carousel-track');
+const slides = document.querySelectorAll('.slide');
+
+let inidex = 0;
+let startX = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+let isDragging = false;
+let animationID;
+
+// Buttons still work
+document.querySelector('.next').onclick = () => {
+  index = (index + 1) % slides.length;
+  updateSlide();
+};
+
+document.querySelector('.prev').onclick = () => {
+  index = (index - 1 + slides.length) % slides.length;
+  updateSlide();
+};
+
+// --- Drag / Swipe Events ---
+track.addEventListener('mousedown', startDrag);
+track.addEventListener('touchstart', startDrag);
+
+track.addEventListener('mouseup', endDrag);
+track.addEventListener('mouseleave', endDrag);
+track.addEventListener('touchend', endDrag);
+
+track.addEventListener('mousemove', drag);
+track.addEventListener('touchmove', drag);
+
+// Prevent image dragging default
+track.querySelectorAll("img").forEach(img => {
+  img.addEventListener("dragstart", e => e.preventDefault());
+});
+
+function startDrag(e) {
+  isDragging = true;
+  startX = getPositionX(e);
+  animationID = requestAnimationFrame(animation);
+}
+
+function drag(e) {
+  if (!isDragging) return;
+  const currentX = getPositionX(e);
+  const move = currentX - startX;
+  currentTranslate = prevTranslate + move;
+}
+
+function endDrag() {
+  if (!isDragging) return;
+  isDragging = false;
+  cancelAnimationFrame(animationID);
+
+  const movedBy = currentTranslate - prevTranslate;
+
+  // If dragged enough → change slide
+  if (movedBy < -200 && index < slides.length - 1) index++;
+  if (movedBy > 200 && index > 0) index--;
+
+  updateSlide();
+}
+
+function getPositionX(e) {
+  return e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
+}
+
+function animation() {
+  track.style.transform = `translateX(${currentTranslate}px)`;
+  if (isDragging) requestAnimationFrame(animation);
+}
+
+function updateSlide() {
+  const slideWidth = slides[0].clientWidth;
+  currentTranslate = -index * slideWidth;
+  prevTranslate = currentTranslate;
+  track.style.transform = `translateX(${currentTranslate}px)`;
+}
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer role="contentinfo">
+
+      <section class="middle">
+
+            <a class="btn4" href="mailto:info@avaralasitus.fi">Varaa maksuton arviokäynti</a></li>
+
+            <p>Palvelemme asiakkaitamme luotettavasti ja korkealla ammattiylpeydellä – jokaisessa projektissa.</p>
+
+            <p>Avara Lasitus Oy<br>
+            Puhelin: 04578320975<br>
+            Sähköposti: info@avaralasitus.fi<br>
+            Postiosoite: Pitkämäenkatu 9, 20250 Turku<br>
+            Y-tunnus: 3619994-7</p>
+
+
+      <img src="kuvat/AvaralasitusLogo-removebg-preview.png" width="150" height="100" class="logo">
+      
+      <a href="Rekisteri- ja tietosuojaseloste.odt">Rekisteri- ja tietosuojaseloste</a>
+
+      <p>© 2026 Avara Lasitus Oy. Kaikki oikeudet pidätetään.</p>
+      
+      </section>
+      <section class="contact-section">
+
+        <h2>Ota yhteyttä</h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="e05f8040-c1bb-4d2e-85c8-9608a9416a8e">
+              
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" placeholder="Message" required></textarea>
+              <button class="submit" type="submit">Submit</button>
+        </form>
+        
+    </footer>
+
+
+
+  </body>
+</html>

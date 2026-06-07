@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terassi- ja parvekelasitusratkaisut sekä ikkuna- ja oviremontit avaimet käteen- periaatteella. Avara Lasitus Oy toteuttaa laadukkaat terassi- ja parvekelasitukset sekä energiatehokkaat ikkuna- ja oviremontit.">
+    <link rel="stylesheet" href="lasitukset.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Lasitukset | Avara Lasitus Oy</title>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+
+  <body>
+<nav class="navbar" role="navigation">
+
+  <!-- LEFT LOGO -->
+  <div class="logo">
+    <img src="kuvat/AvaralasitusLogo-removebg-preview-white.png" alt="Logo">
+  </div>
+
+  <!-- HAMBURGER MENU BUTTON -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- CENTER NAVIGATION -->
+  <div class="nav-center" id="navCenter">
+
+    <ul class="nav-links">
+      <li><a href="index.html">ETUSIVU</a></li>
+      <li><a href="lasitukset.html">PARVEKE- TERASSI- JA KAIDELASITUKSET</a></li>
+      <li><a href="ikkuna.html">IKKUNAT JA OVET</a></li>
+      <li><a href="rahoitus.html">RAHOITUS</a></li>
+      <li><a href="referenssit.html">REFERENSSIT</a></li>
+      <li><a href="palvelut.html">PALVELUT</a></li>
+      <li><a href="yritys.html">YRITYS</a></li>
+      <li><a href="yhteystiedot.html">YHTEYSTIEDOT</a></li>
+
+    </ul>
+
+
+  </div>
+
+</nav> 
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navCenter = document.getElementById('navCenter');
+  
+  hamburger.addEventListener('click', () => {
+    navCenter.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+  
+  // Close menu when a link is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navCenter.classList.remove('active');
+      hamburger.classList.remove('active');
+    });
+  });
+</script> 
+
+
+    <section class="palvelut" role="main">
+        <section class="text">
+          <img src="kuvat/alutec.png" alt="alutec" class="palvelut-logo">
+          <h1>Terassi- ja parvekelasitukset</h1>
+          <p>Meiltä saat kokonaispalvelun suunnittelusta valmiiseen asennukseen. <br>Huolehdimme kaikesta, jotta sinä voit nauttia valmiista lopputuloksesta.</p>
+          <p>Avara Lasituksen terassi- parveke- ja kaidejärjestelmillä on Avainlippu-merkki<br><img class="avainlippu" src="kuvat/Avainlippu.png"></p>
+        </section>
+        <section class="palvelut-lista">
+           
+                <section class="image">
+                    <img src="kuvat/Terassi.jpeg" alt="Lasitukset">
+                </section>
+
+
+        </section>
+
+    <section class="text1">
+        <h2>Lasituksen hyödyt</h2>
+    </section>
+
+    <section class="icons">
+        <div class="icon1">
+            <img src="kuvat/Käyttöaika.png" alt="Energy Saving Icon">
+            <h3>Pidentää käyttöaikaa</h3>
+            <p>Keväästä syksyyn – ja <br>jopa ympäri vuoden</p>
+        </div>
+        <div class="icon2">
+            <img src="kuvat/Suojaa.png" alt="Energy Saving Icon">
+            <h3>Suojaa säältä ja <br>likaantumiselta</h3>
+            <p>Tuuli, sade ja pöly pysyvät <br>ulkopuolella.</p>
+        </div>
+        <div class="icon3">
+            <img src="kuvat/Hiljaisempi.png" alt="Energy Saving Icon">
+            <h3>Lisää asumismakavuutta</h3>
+            <p>Vähemmän melua, enemmän <br>rauhaa.</p>
+        </div>
+        <div class="icon4">
+            <img src="kuvat/Arvo.png" alt="Energy Saving Icon">
+            <h3>Nostaa kiinteistön arvoa</h3>
+            <p>Tyylikäs ja kestävä ratkaisu <br>parantaa arvoa.</p>
+        </div>
+    
+    </section>
+
+
+    
+
+    
+    <section  class="mallisto">
+        <h2>Lasitusvaihtoehtomme</h2>
+        <section class="mallisto-teksti">
+            <section class="mallisto-teksti1">
+                <h2>Terassilasitukset&nbsp;&nbsp;&nbsp;</h2>
+
+                <img src="kuvat/Kuva4.jpg" alt="Ikkuna1" width="500" height="400">
+
+                <p>Puitteettomat liukulasitukset tekevät terassistasi <br>
+                    suojaisan ja viihtyisän. Tyylikkäs, huoltovapaa ja <br>
+                    äänetön lasitus ratkaisu suomalaisiin koteihin.</p>
+            </section>
+
+             <section class="mallisto-teksti2">
+                <h2>Parvekelasitukset</h2>
+
+                <img src="kuvat/Kuva2.jpg" alt="Ikkuna2" width="500" height="400">
+
+                <p>Parvekelasitus lisää asumismukavuutta ja antaa <br>
+                    parvekkeelle uuden elämän ja käyttötarkoituksen.<br>
+                    Äänetön ja helppo käyttää.</p>
+            </section>
+
+             <section class="mallisto-teksti3">
+                <h2>Kaidelasitukset&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+
+                <img src="kuvat/Kuva1.jpg" alt="Ikkuna3" width="500" height="400">
+
+                <p>Pystytolpaton kaidelasitus antaa selkeän näkymän ja <br>
+                    viimeistelee puitteettoman parvekelasituksen. <br>
+                    Lisää valoa ja elämää parvekkeellesi.</p>
+             </section>
+
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer role="contentinfo">
+
+      <section class="middle">
+
+            <a class="btn4" href="mailto:info@avaralasitus.fi">Varaa maksuton arviokäynti</a></li>
+
+            <p>Palvelemme asiakkaitamme luotettavasti ja korkealla ammattiylpeydellä – jokaisessa projektissa.</p>
+
+            <p>Avara Lasitus Oy<br>
+            Puhelin: 04578320975<br>
+            Sähköposti: info@avaralasitus.fi<br>
+            Postiosoite: Pitkämäenkatu 9, 20250 Turku<br>
+            Y-tunnus: 3619994-7</p>
+
+
+      <img src="kuvat/AvaralasitusLogo-removebg-preview.png" width="150" height="100" class="logo">
+      
+      <a href="Rekisteri- ja tietosuojaseloste.odt">Rekisteri- ja tietosuojaseloste</a>
+
+      <p>© 2026 Avara Lasitus Oy. Kaikki oikeudet pidätetään.</p>
+      
+      </section>
+      <section class="contact-section">
+
+        <h2>Ota yhteyttä</h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="e05f8040-c1bb-4d2e-85c8-9608a9416a8e">
+              
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" placeholder="Message" required></textarea>
+              <button class="submit" type="submit">Submit</button>
+        </form>
+        
+    </footer>
+
+
+
+  </body>
+</html>

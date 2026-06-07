@@ -1,0 +1,819 @@
+body {
+    background-color: #fefefeee;
+    font-family: Montserrat;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background: #1f4fa3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo img {
+  width: 400px;
+  margin-bottom: 0px;
+}
+
+.logo h1 {
+  font-size: 32px;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 400;
+  border-bottom: 3px solid #0066aa;
+  padding-bottom: 5px;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  gap: 6px;
+  position: relative;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* CENTER NAVIGATION AREA */
+.nav-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d4ffd0;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  position: static;
+  justify-content: center;
+}
+
+.social-media img {
+  width: 70px;
+  height: auto;
+  margin: 0;
+}
+
+.palvelut-logo  {
+    width: 400px;
+    height: auto;
+    margin-bottom: 0px;
+    margin-left: 125px;
+}
+
+.text {
+    padding-top: 40px;
+    background: #fefefeee;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.text h1 {
+    margin-left: 130px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    margin-left: 130px;
+    max-width: 600px;
+}
+
+.palvelut-lista {
+    display: flex;
+    font-size: 20px;
+    background: #fefefeee;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.palvelu-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: -140px;
+    margin-left: -50px;
+}
+
+
+.image {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-top: -369px;
+    margin-right: -20px;
+    margin-bottom: -15px;
+}
+
+.image img {
+    width: 800px;
+    height: 600px;
+}
+
+
+
+
+.text1 {
+    background-color: #fefefe;
+    padding: 20px;
+    padding-left: 130px;
+}
+
+.icons {
+  background-color: #fefefe;
+  color: #202020;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  padding-left: 0px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.icons img {
+  margin-top: 20px;
+  width: 80px;
+  height: auto;
+}
+
+.icons p {
+  font-size: 18px;
+  margin-top: 10px;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icon1 {
+    margin-bottom: 0px;
+}
+
+.icon2 {
+    margin-top: 10px;
+}
+
+.icon3 {
+    margin-top: 3px;
+}
+
+.icon4 {
+    margin-top: 15px;
+}
+
+.mallisto {
+    background-color: #fefefe;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.mallisto h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-left: 130px;
+    color: #202020;
+    
+}
+
+.mallisto-kuvat {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.mallisto-kuvat img {
+    width: 520px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.mallisto-teksti {
+    background-color: #fefefe;
+    padding-bottom: 20px;
+    font-size: 25px;
+
+}
+
+.mallisto-teksti1 {
+    margin-top: 10px;
+    margin-left: 130px;
+}
+
+.mallisto-teksti2 {
+    margin-top: -93px;
+    margin-left: 670px;
+}
+
+.mallisto-teksti3 {
+    margin-top: -93px;
+    margin-left: 1210px;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background: #a8a7a7;
+    color: #efeee8;
+    padding: 10px;
+    margin-top: 20px;
+    flex-direction: row;
+    display: flex;
+    margin-top: -15px;
+    padding-left: 550px;
+}
+
+
+
+.btn4 {
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: #51c042;
+  padding: 14px 28px;
+  border: 1px solid #333333;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border-radius: 30px;
+  height: 40px;
+  backdrop-filter: blur(6px);
+  box-shadow:
+  0 0 15px rgba(255,255,255,0.3),
+  inset 0 0 10px rgba(255,255,255,0.2);
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn4:hover {
+  transform: scale(1.05);
+  background: rgba(94,170,106,0.8);
+}
+
+
+
+
+ul {
+    list-style: none;
+}
+
+
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin: 0;
+    padding: 20px;
+}
+
+
+footer img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+footer p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #efeee8;
+}
+
+
+.contact-section {
+  box-shadow: #00000091 0px 0px 10px;
+  width: 100%;
+  max-width: 500px;
+  height: 420px;
+  margin: 30px auto;
+  border-radius: 30px;
+  padding: 70px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #818181;
+  font-family: Arial, sans-serif;
+}
+
+.contact-section h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: -60px;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+.submit {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background: #51c042;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .logo img {
+    width: 180px;
+  }
+  
+  .nav-center {
+    margin-top: 20px;
+    gap: 15px;
+  }
+  
+  .nav-links {
+    gap: 30px;
+  }
+  
+  .palvelut-logo {
+    width: 200px;
+    margin-left: 20px;
+  }
+
+  .text img {
+    margin-bottom: 10px;
+  }
+  
+  .text h1 {
+    margin-left: 50px;
+  }
+  
+  .text p {
+    margin-left: 50px;
+  }
+  
+  .image {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .image img {
+    width: 700px;
+    height: auto;
+  }
+  
+  .reference-btn {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  
+  .mallisto-teksti3 {
+    margin-left: 0;
+  }
+  
+    footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: -540px;
+  }
+
+
+  .middle {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .middle p {
+    margin-left: 0px;
+  }
+  
+  .contact-section {
+    width: 100%;
+  }
+
+
+
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+    position: relative;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    width: 120px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .nav-center {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    background: inherit;
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 1000;
+    margin-top: 10;
+  }
+  
+  .nav-center.active {
+    max-height: 500px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-links {
+    gap: 15px;
+    font-size: 14px;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .nav-links a {
+    font-size: 14px;
+  }  
+  .palvelut-logo {
+    width: 100px;
+    margin-left: 10px;
+  }
+
+  .palvelut-logo img {
+    margin-bottom: -2000px;
+  }
+  
+  .text {
+    font-size: 16px;
+  }
+  
+  .text h1 {
+    margin-left: 20px;
+    font-size: 24px;
+  }
+  
+  .text p {
+    margin-left: 20px;
+  }
+  
+  .palvelut-lista {
+    font-size: 16px;
+  }
+  
+  .image {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .image img {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+  }
+  
+  .reference-btn {
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 14px 35px;
+    font-size: 14px;
+  }
+  
+  .icons {
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+  
+  .icons p {
+    width: 150px;
+  }
+  
+  .mallisto {
+    padding: 15px;
+  }
+  
+  .mallisto h2 {
+    font-size: 22px;    
+  }
+  
+  .mallisto-teksti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .mallisto-teksti h2 {
+    text-align: left;
+    margin-left: 90px;
+  }
+
+  .mallisto-teksti img {
+    max-width: 300px;
+    max-height: 200px;
+  }
+  
+  .mallisto-teksti1,
+  .mallisto-teksti2,
+  .mallisto-teksti3 {
+    margin-left: 0;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  
+
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .navbar {
+    padding: 8px 10px;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 100px;
+    max-width: 100%;
+  }
+  
+  .logo h1 {
+    font-size: 18px;
+  }
+  
+  .nav-center {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .nav-links {
+    gap: 10px;
+    font-size: 12px;
+    flex-direction: column;
+  }
+  
+  .social-media img {
+    width: 50px;
+  }
+  
+  .palvelut-logo {
+    width: 150px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    padding-top: 20px;
+    font-size: 12px;
+  }
+  
+  .text h1 {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .text p {
+    margin-left: 10px;
+  }
+  
+  .palvelut-lista {
+    font-size: 14px;
+    gap: 15px;
+  }
+  
+  .image {
+    margin-top: 15px;
+    margin-right: 0px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  
+
+
+  .text1 {
+    margin-left: -40px;
+  }
+  
+  .icons {
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .icons img {
+    width: 60px;
+  }
+  
+  .icons p {
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  .mallisto {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
+  .mallisto h2 {
+    font-size: 18px;
+    margin-left: 0px;
+  }
+  
+
+  
+  .mallisto-teksti {
+    font-size: 12px;
+  }
+  
+  .mallisto-teksti1,
+  .mallisto-teksti2,
+  .mallisto-teksti3 {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .mallisto-teksti1 h2 {
+    margin-left: 70px;
+  }
+  
+    .mallisto-teksti2 h2 {
+    margin-left: 70px;
+  }
+
+    .mallisto-teksti3 h2 {
+    margin-left: 80px;
+  }
+
+  .social-media {
+    margin: 10px 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .social-media img {
+    width: 60px;
+    margin: 5px;
+  }
+  
+  .contact-section {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    margin: 15px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  form {
+    gap: 15px;
+  }
+  
+  input, textarea {
+    padding: 12px;
+    font-size: 12px;
+  }
+  
+  .submit {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+    footer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .middle {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  footer img {
+    width: 200px;
+  }
+}
